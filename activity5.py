@@ -20,9 +20,9 @@ for line in words_file:
 
 
 #Function #1:
-def twenty_or_more(file):
+def more_than_20(file):
     words_over_20 = []
-    with open(CROSSWD.txt, 'r'):
+    with open(file, 'r') as data:
         for line in data:
             for words in line.split():
                 if len(word.strip()) > 20:
