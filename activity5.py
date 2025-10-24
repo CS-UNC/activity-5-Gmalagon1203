@@ -22,11 +22,11 @@ for line in words_file:
 #Function #1:
 def more_than_20(file):
     words_over_20 = []
-    with open(file, 'r') as data:
+    with open('CROSSWD.txt', 'r') as data:
         for line in data:
             for words in line.split():
-                if len(word.strip()) > 20:
-                    words_over_20.append(word.strip())
+                if len(words.strip()) > 20:
+                    words_over_20.append(words.strip())
     return words_over_20
 
 
